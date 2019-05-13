@@ -6,8 +6,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Starter</title>
+   <title>AdminLTE 2 | Starter</title>
   <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -268,18 +267,8 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         <li><a href="/admin/users"><i class="fa fa-users"></i> <span>Usuários</span></a></li>
         <li><a href="/admin/categories"><i class="fa fa-link"></i> <span>Categorias</span></a></li>
-         <li><a href="/admin/products"><i class="fa fa-link"></i> <span>Produtos</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
-        </li>
+         <li><a href="/admin/products"><i class="fa fa-link"></i> <span>Produtos</span></a></li>   
+         <li><a href="/admin/orders"><i class="fa fa-shopping-cart"></i> <span>Pedidos</span></a></li>        
       </ul>
       <!-- /.sidebar-menu -->
     </section>

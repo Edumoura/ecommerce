@@ -574,7 +574,7 @@ $app->get("/boleto/:idorder", function($idorder){
 
 });
 
-$app->get("/profile-orders", function(){
+$app->get("/orders", function(){
 
 	User::verifyLogin(false);
 
@@ -589,7 +589,7 @@ $app->get("/profile-orders", function(){
 });
 
 
-$app->get("/profile/orders/:idorder", function($idorder){
+$app->get("/:idorder", function($idorder){
 
 	User::verifyLogin(false);
 
@@ -609,7 +609,7 @@ $app->get("/profile/orders/:idorder", function($idorder){
 		'order'=>$order->getValues(),
 		'cart'=>$cart->getValues(),
 		'products'=>$cart->getProducts()
-	]);
+	]);	
 
 });
 
