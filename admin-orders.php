@@ -48,11 +48,11 @@ use \Hcode\Model\OrderStatus;
 
 		$order->setSuccess("Status atualizado");
 		header("Location: /admin/orders/".$idorder."/status");
-		exit;
-
-		
+		exit;	
 
 	});
+
+
 
 	$app->get("/admin/orders/:idorder/delete", function($idorder){
 

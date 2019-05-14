@@ -486,6 +486,8 @@ $app->post("/profile", function(){
 	exit;
 
 });
+//----------------------------------------------------------------------------------------------------------------------------
+
 
 $app->get("/order/:idorder", function($idorder){
 
@@ -501,6 +503,7 @@ $app->get("/order/:idorder", function($idorder){
 		'order'=>$order->getValues()
 	]);
 });
+
 
 $app->get("/boleto/:idorder", function($idorder){
 
@@ -574,6 +577,8 @@ $app->get("/boleto/:idorder", function($idorder){
 
 });
 
+
+
 $app->get("/orders", function(){
 
 	User::verifyLogin(false);
@@ -588,8 +593,13 @@ $app->get("/orders", function(){
 
 });
 
+//----------------------------------------------------------------------------------------------------------------------------
 
-$app->get("/:idorder", function($idorder){
+
+
+
+
+$app->get("/profile/orders/:idorder", function($idorder){
 
 	User::verifyLogin(false);
 
@@ -613,6 +623,8 @@ $app->get("/:idorder", function($idorder){
 
 });
 
+
+//----------------------------------------------------------------------------------------------------------------------------
 $app->get("/profile-change-password", function(){
 
 	User::verifyLogin(false);
